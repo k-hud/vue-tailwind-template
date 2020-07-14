@@ -18,6 +18,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     plugins: [
       require('tailwindcss'),
       require('autoprefixer'),
+      // TODO: Reinstate PurgeCSS in Production
     ]
   }
 
