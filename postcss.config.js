@@ -7,6 +7,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
       './src/**/*.jsx',
       // etc.
     ],
+    whitelist: [],
+    whitelistPatterns: [ /-(leave|enter|appear)(|-(to|from|active))$/, /^(?!(|.*?:)cursor-move).+-move$/, /^router-link(|-exact)-active$/ ],
 
     // Include any special characters you're using in this regular expression
     defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || []
@@ -16,8 +18,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     plugins: [
       require('tailwindcss'),
       require('autoprefixer'),
-      ...process.env.NODE_ENV == 'production'
-        ? [purgecss]
-        : []
     ]
   }
+
+

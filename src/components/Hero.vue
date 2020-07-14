@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="hidden md:flex md:space-x-10">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a>
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">This thing</a>
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Company</a>
@@ -132,6 +132,3 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
